@@ -13,7 +13,7 @@ import Home from './Components/Home';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route exact path="/" component={Home} />
         <Route exact path="/AboutMe" component={AboutMe} />
