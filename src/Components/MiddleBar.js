@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Navbar, Col, Row, Container } from 'react-bootstrap';
+import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 
 class MiddleBar extends Component {
   render() {

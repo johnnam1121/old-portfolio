@@ -5,6 +5,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import Home from './Components/Home';
 import AboutMe from './Components/AboutMe';
 import MyWorks from './Components/MyWorks';
 import ContactMe from './Components/ContactMe';
@@ -16,7 +17,7 @@ root.render(
   <BrowserRouter>
     <React.StrictMode>
       <Routes>
-        <Route path="/" element={<App />} />
+        <Route path="/" element={<Home />} />
         <Route path="/AboutMe" element={<AboutMe />} />
         <Route path="/MyWorks" element={<MyWorks />} />
         <Route path="/ContactMe" element={<ContactMe />} />
