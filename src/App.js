@@ -13,7 +13,7 @@ import Home from './Components/Home';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={window.location.pathname || ''}>
       <Routes>
         <Route exact path="/" component={Home} />
         <Route exact path="/AboutMe" component={AboutMe} />

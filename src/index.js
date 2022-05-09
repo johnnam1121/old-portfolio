@@ -14,7 +14,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter basename={process.env.PUBLIC_URL}>
+  <BrowserRouter >
     <React.StrictMode>
       <Routes>
         <Route path="/" element={<Home />} />
