@@ -18,9 +18,9 @@ class App extends Component {
         <BrowserRouter basename="/portfolio">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/#AboutMe" element={<AboutMe />} />
-            <Route path="/#MyWorks" element={<MyWorks />} />
-            <Route path="/#ContactMe" element={<ContactMe />} />
+            <Route path="/#/AboutMe" element={<AboutMe />} />
+            <Route path="/#/MyWorks" element={<MyWorks />} />
+            <Route path="/#/ContactMe" element={<ContactMe />} />
           </Routes>
         </BrowserRouter>
       </div>
