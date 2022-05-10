@@ -1,26 +1,42 @@
 import React, { Component } from 'react'
-import { Navbar, Col, Row, Container } from 'react-bootstrap';
+import { Navbar, Col, Row, Container, Nav } from 'react-bootstrap';
 import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 
 class MiddleBar extends Component {
   render() {
     return (
-      <Container className='middlebar'>
+      <Nav className='middlebar'>
         <Row>
           <Col sm={3}>
-            <a className='navItem' href="/portfolio">Home</a>
+            <Nav.Link
+              className='navItem'
+              as={Link}
+              to="/">Home
+            </Nav.Link>
           </Col>
           <Col sm={3}>
-            <a className='navItem' href="/portfolio/#/AboutMe">Experience</a>
+            <Nav.Link
+              className='navItem'
+              as={Link}
+              to="/AboutMe">Experience
+            </Nav.Link>
           </Col>
           <Col sm={3}>
-            <a className='navItem' href="/portfolio/#/MyWorks">Projects</a>
+            <Nav.Link
+              className='navItem'
+              as={Link}
+              to="/MyWorks">Projects
+            </Nav.Link>
           </Col>
           <Col sm={3}>
-            <a className='navItem' href="/portfolio/#/ContactMe">Contact</a>
+            <Nav.Link
+              className='navItem'
+              as={Link}
+              to="/ContactMe">Contact
+            </Nav.Link>
           </Col>
         </Row>
-      </Container>
+      </Nav>
     )
   }
 }
