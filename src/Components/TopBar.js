@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Navbar, Nav, NavDropdown, Container, Image } from 'react-bootstrap';
+import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 
 class TopBar extends Component {
   render() {
@@ -17,9 +18,18 @@ class TopBar extends Component {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav" className="alignRight">
             <Nav className="me-auto">
-              <Nav.Link href="/portfolio/AboutMe">About Me</Nav.Link>
-              <Nav.Link href="/portfolio/MyWorks">My Work</Nav.Link>
-              <Nav.Link href="/portfolio/ContactMe">Contact Me</Nav.Link>
+              <Nav.Link
+                as={Link}
+                to="/AboutMe">Experience
+              </Nav.Link>
+              <Nav.Link
+                as={Link}
+                to="/MyWorks">Projects
+              </Nav.Link>
+              <Nav.Link
+                as={Link}
+                to="/ContactMe">Contact
+              </Nav.Link>
               <NavDropdown title="Socials" id="collasible-nav-dropdown">
                 <NavDropdown.Item href="https://www.facebook.com/john.nam.98/" target="_blank"><i class="bi bi-facebook"></i> Facebook</NavDropdown.Item>
                 <NavDropdown.Divider />

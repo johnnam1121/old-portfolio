@@ -3,7 +3,7 @@
 }
 
 .navItem {
-  color: #000000;
+  color: #000000 !important;
   justify-content: center;
   align-items: center;
   position: relative;
