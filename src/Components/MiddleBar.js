@@ -8,16 +8,16 @@ class MiddleBar extends Component {
       <Container className='middlebar'>
         <Row>
           <Col sm={3}>
-            <a className='navItem' href="/">Home</a>
+            <a className='navItem' href="/portfolio">Home</a>
           </Col>
           <Col sm={3}>
-            <a className='navItem' href="AboutMe">Experience</a>
+            <a className='navItem' href="/portfolio/AboutMe">Experience</a>
           </Col>
           <Col sm={3}>
-            <a className='navItem' href="MyWorks">Projects</a>
+            <a className='navItem' href="/portfolio/MyWorks">Projects</a>
           </Col>
           <Col sm={3}>
-            <a className='navItem' href="ContactMe">Contact</a>
+            <a className='navItem' href="/portfolio/ContactMe">Contact</a>
           </Col>
         </Row>
       </Container>
