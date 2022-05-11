@@ -10,6 +10,7 @@ class Home extends Component {
         <Row>
           <TopBar />
         </Row>
+        <Row className='mt-5' ></Row>
         <Row className='mt-5' >
           <Col sm={{ span: 4, offset: 2 }}>
             <h1 className='title'>Welcome!</h1>

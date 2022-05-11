@@ -5,10 +5,8 @@ import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 class TopBar extends Component {
   render() {
     return (
-      <Navbar collapseOnSelect expand="" className="App">
-
+      <Navbar collapseOnSelect expand="" className="background" fixed='top'>
         <Container>
-
           <Navbar.Brand href="/portfolio/">
             <img src={process.env.PUBLIC_URL + "/Pictures/JNlogo.png"} alt="logo" width="30" height="30" className="d-inline-block align-top rounded" />{' '}
           </Navbar.Brand>
