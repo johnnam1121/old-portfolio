@@ -56,8 +56,8 @@ class MyWorks extends Component {
                 selected video, on video over - play next video, on hover -
                 scale suggested video for user friendlyness.</li>
             </ul>
-            <p>Check out the website <a href="https://johnnam1121.github.io/johnnam" target="_blank">here</a></p>
-            <p>GitHub Repo <a href="https://github.com/johnnam1121/johnnam" target="_blank">here</a></p>
+            <p>Check out the website <a href="https://johntrieseverything.github.io/ignwebapp" target="_blank">here</a></p>
+            <p>GitHub Repo <a href="https://github.com/johntrieseverything/ignwebapp" target="_blank">here</a></p>
           </Col>
         </Row>
 
