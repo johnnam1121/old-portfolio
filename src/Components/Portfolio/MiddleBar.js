@@ -1,18 +1,18 @@
-import React, { Component } from 'react'
-import { Navbar, Col, Row, Container, Nav } from 'react-bootstrap';
-import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
+import React, { Component } from 'react';
+import { Col, Nav, Row } from 'react-bootstrap';
+import { Link } from "react-router-dom";
 
 class MiddleBar extends Component {
   render() {
     function scrollToTop() {
       window.scrollTo(0, 0);
     }
-  
+
     return (
       <Nav className='middlebar'>
-        <Row onClick={()=> {
-              scrollToTop()
-            }}>
+        <Row onClick={() => {
+          scrollToTop()
+        }}>
           <Col sm={3}>
             <Nav.Link
               className='navItem'
@@ -21,7 +21,7 @@ class MiddleBar extends Component {
             </Nav.Link>
           </Col>
           <Col sm={3}>
-            <Nav.Link 
+            <Nav.Link
               className='navItem'
               as={Link}
               to="/AboutMe">Experience

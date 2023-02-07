@@ -1,14 +1,14 @@
 import React, { Component } from 'react'
-import { Container, Row, Col, Image } from 'react-bootstrap'
+import { Col, Container, Image, Row } from 'react-bootstrap'
 
 
 class Projects extends Component {
   render() {
     return (
-      <Container>
+      <Container fluid id='ProjectsSection' className='shadow-sm mb-5'>
         <Row className='mt-5 mb-3'>
           <Col>
-            <p className='paragraphs' style={{ color: '#00adb5' }}>Things I've Done</p>
+            <p className='paragraphs' style={{ color: '#00adb5' }}>Things I've Done <hr /></p>
           </Col>
         </Row>
         <Row className='mb-5'>

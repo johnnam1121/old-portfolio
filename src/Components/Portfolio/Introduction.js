@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
-import { Container, Row, Col, Image } from 'react-bootstrap'
+import { Col, Container, Image, Row } from 'react-bootstrap'
 
 class Introduction extends Component {
   render() {
     return (
-      <Container fluid>
-        <Row className='mb-2'>
+      <Container fluid style={{ height: '100vh' }} className='shadow-sm mb-5'>
+        <Row id='IntroSection' className='mb-2' >
           <Col md={{ span: 6, offset: 2 }}>
-            <p className='paragraphs' style={{ color: '#00adb5' }}>A Little About Me..</p>
+            <p className='paragraphs' style={{ color: '#00adb5' }}>A Little About Me..<hr /></p>
           </Col>
         </Row>
         <Row className='mb-5'>

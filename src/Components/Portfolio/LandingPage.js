@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
-import { Container, Row, Col, Button } from 'react-bootstrap'
+import { Col, Container, Row } from 'react-bootstrap'
 
 class LandingPage extends Component {
   render() {
     return (
-      <Container fluid>
-        <Row style={{ height: '80vh' }}>
-          <Col md={{span: 4, offset: 2}}>
+      <Container fluid className='shadow-sm mb-5'>
+        <Row id='LandingSection' style={{ height: '80vh' }}>
+          <Col md={{ span: 4, offset: 2 }}>
             <h1 className='mainHeadings'>John Nam</h1>
             <h2 className='smallerHeadings'>Welcome to my portfolio website!</h2>
             <p className='paragraphs'>

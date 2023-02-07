@@ -1,47 +1,30 @@
-import React, { Component } from 'react'
-import { Navbar, Nav, NavDropdown, Container, Row, Col } from 'react-bootstrap';
-import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
+import React from 'react';
+import { Col, Container, Navbar, Row } from 'react-bootstrap';
+import { Link } from 'react-scroll';
 
-class TopBar extends Component {
-  render() {
-    return (
-      <Container fluid>
-        <Row className='shadow-lg p-2 mb-2' style={{ width: '100%', position: 'fixed', backgroundColor: '#222831', alignContent:'left' }}>
+function TopBar() {
+  return (
+    <Container fluid >
+      {/* #222831' */}
+      <Row>
+        <Row className='shadow-lg p-1 align-items-center' style={{ width: '100%', position: 'fixed', backgroundColor: '#222831' }}>
           <Col>
             <Navbar.Brand href="/portfolio/">
               <img src={process.env.PUBLIC_URL + "/Pictures/JNlogo.png"} alt="logo" width="30" height="30" className="d-inline-block align-top rounded" />{' '}
             </Navbar.Brand>
           </Col>
-          <Col>
-            <Nav className="justify-content-end" activeKey="/home">
-              <Nav.Item>
-                <Nav.Link href="/home">Active</Nav.Link>
-              </Nav.Item>
-              <Nav.Item>
-                <Nav.Link eventKey="link-1">Link</Nav.Link>
-              </Nav.Item>
-              <Nav.Item>
-                <Nav.Link eventKey="link-2">Link</Nav.Link>
-              </Nav.Item>
-              <Nav.Item>
-                <Nav.Link eventKey="disabled" disabled>
-                  Disabledtesttesttest
-                </Nav.Link>
-              </Nav.Item>
-            </Nav>
+          <Col sm={{ span: 4 }} className='mt-1'>
+            <ul style={{ display: 'flex', listStyle: 'none', justifyContent: 'space-around' }}>
+              <li className='scrollLink'><Link activeClass="active" to="IntroSection" smooth={false} duration={1000} offset={-100}>About Me</Link></li>
+              <li className='scrollLink'><Link activeClass="active" to="ExperienceSection" smooth={false} duration={1000} offset={-100}>Experience</Link></li>
+              <li className='scrollLink'><Link activeClass="active" to="ProjectsSection" smooth={false} duration={1000} offset={-100}>Projects</Link></li>
+              <li className='scrollLink'><Link activeClass="active" to="ContactSection" smooth={false} duration={1000} offset={-100}>Contact Me</Link></li>
+            </ul>
           </Col>
         </Row>
-      </Container>
-    )
-  }
+      </Row >
+    </Container>
+  )
 }
 
 export default TopBar
-
-{/* <NavDropdown title="Socials" id="collasible-nav-dropdown">
-  <NavDropdown.Item href="https://www.facebook.com/john.nam.98/" target="_blank"><i class="bi bi-facebook"></i> Facebook</NavDropdown.Item>
-  <NavDropdown.Divider />
-  <NavDropdown.Item href="https://www.linkedin.com/in/johnnam93" target="_blank"><i class="bi bi-linkedin"></i> LinkedIn</NavDropdown.Item>
-  <NavDropdown.Divider />
-  <NavDropdown.Item href="https://github.com/johnnam1121" target="_blank"><i class="bi bi-github"></i> GitHub</NavDropdown.Item>
-</NavDropdown> */}
