@@ -1,0 +1,141 @@
+.background {
+  background-color: #222831;
+}
+
+.mainHeadings {
+  color: #00adb5;
+  font-size: 10vh;
+  font-family: sans-serif;
+}
+
+.smallerHeadings {
+  color: #eeeeee;
+  font-size: 6vh;
+  font-family: sans-serif;
+}
+
+.paragraphs {
+  color: #777777;
+  font-size: 2vh;
+  font-family: sans-serif;
+}
+
+.button {
+  background-color: #393e46;
+  color: #00adb5;
+  border-color: #eeeeee;
+}
+
+.mainImg {
+  width: 80%;
+  border: #00adb5;
+  border-style: solid;
+  border-radius: 20%;
+  border-color: #00adb5;
+}
+
+.commentary {
+  color: #00adb5;
+  font-size: 2vh;
+  font-family: sans-serif;
+}
+
+.component {
+  background-color: #777777;
+}
+
+.projectImg {
+  width: 100%;
+  border: #00adb5;
+  border-style: solid;
+  border-radius: 20%;
+  border-color: #00adb5;
+}
+
+.projectHeadings {
+  color: #00adb5;
+  font-size: 3vw;
+  font-family: sans-serif;
+}
+
+.smallerProjectHeadings {
+  color: #eeeeee;
+  font-size: 2vw;
+  font-family: sans-serif;
+}
+
+.projectParagraphs {
+  color: #777777;
+  font-size: 2vh;
+  font-family: sans-serif;
+}
+
+.tabButton {
+  border-style: solid;
+  border-color: #00adb5;
+  border-radius: 5%;
+}
+
+.tab {
+  color: #00adb5
+}
+
+.navLink {
+  color: #eeeeee;
+  background-color: #393e46;
+  margin-bottom: 1vh;
+}
+
+
+
+
+
+h1 {
+  color: #00adb5;
+  font-size: 10vh;
+  font-family: sans-serif;
+}
+
+h2 {
+  color: #eeeeee;
+  font-size: 6vh;
+  font-family: sans-serif;
+}
+
+p {
+  color: #393e46;
+  font-size: 2vh;
+  font-family: sans-serif;
+}
+
+.backgroundtest {
+  background-color: #022e66;
+}
+
+.h1test {
+  color: #c2c3c5;
+}
+
+.h2test {
+  color: #96785b;
+}
+
+.ptest {
+  color: #d1ab7d;
+}
+
+.backgroundtest2 {
+  background-color: #eaffd0;
+}
+
+.h1test2 {
+  color: #95e1d3
+}
+
+.h2test2 {
+  color: #f38181;
+}
+
+.ptest2 {
+  color: #fce38a;
+}

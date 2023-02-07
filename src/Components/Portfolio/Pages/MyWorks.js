@@ -1,8 +1,7 @@
-import React, { Component, useState } from 'react'
-import { Col, Container, Image, Row, Modal, Card } from 'react-bootstrap'
-import MiddleBar from './MiddleBar';
-import ModalPictures from './ModalPictures';
-import TopBar from './TopBar';
+import React, { Component } from 'react';
+import { Col, Container, Image, Row } from 'react-bootstrap';
+import MiddleBar from '../MiddleBar';
+import TopBar from '../../TopBar';
 
 class MyWorks extends Component {
 

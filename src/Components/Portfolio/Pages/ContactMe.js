@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import "bootstrap-icons/font/bootstrap-icons.css";
-import TopBar from './TopBar';
-import MiddleBar from './MiddleBar';
+import TopBar from '../TopBar';
+import MiddleBar from '../MiddleBar';
 
 class ContactMe extends Component {
   render() {

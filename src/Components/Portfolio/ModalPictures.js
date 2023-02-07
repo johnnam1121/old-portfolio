@@ -11,7 +11,7 @@ const ModalPictures = (props) => {
   return (
     <>
       <Image
-        style={{ width: '10vw', height: '25vh', marginRight:5 }}
+        style={{ width: '10vw', borderRadius:'20%' }}
         className='extraImg'
         src={props.Image}
         alt={props.AltTag}

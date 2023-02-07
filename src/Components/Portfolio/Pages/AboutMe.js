@@ -1,14 +1,13 @@
-import React, { Component } from 'react'
-import { Col, Container, Image, Row, Card } from 'react-bootstrap'
-import MiddleBar from './MiddleBar';
-import ModalPictures from './ModalPictures';
-import TopBar from './TopBar';
+import React, { Component } from 'react';
+import { Card, Col, Container, Image, Row } from 'react-bootstrap';
+import MiddleBar from '../MiddleBar';
+import ModalPictures from '../../ModalPictures';
+import TopBar from '../../TopBar';
 
 class AboutMe extends Component {
   render() {
     return (
       <Container>
-        <TopBar />
         <Row className='mt-5 mb-3' >
           <Col sm={{ span: 4, offset: 1 }}>
             <Image
