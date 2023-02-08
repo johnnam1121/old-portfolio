@@ -4,9 +4,12 @@ import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 function SideBar() {
   return (
-    <Col className='sideBar p-1' sm={{ span: 1 }}>
+    <Col className='sideBar p-1 shadow-lg'>
       <nav className="navbar">
         <ul className="navbar-nav">
+          {/* <li className="nav-item">
+            <p className='paragraphs' style={{ writingMode: 'vertical-rl', transform: 'rotate(180deg)' }}>JohnNam93@gmail.com</p>
+          </li> */}
           <li className="nav-item">
             <a target="_blank" rel="noopener noreferrer" href="https://github.com/johnnam1121"><FaGithub className='iconSpacing' size="2vw" /></a>
           </li>

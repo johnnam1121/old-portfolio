@@ -7,7 +7,7 @@ class Projects extends Component {
     return (
       <Container fluid id='ProjectsSection' className='shadow-sm mb-5'>
         <Row className='mt-5 mb-5'>
-          <Col>
+          <Col sm={{span:8, offset:2}}>
             <p className='paragraphs' style={{ color: '#00adb5' }}>Things I've Done <hr /></p>
           </Col>
         </Row>
