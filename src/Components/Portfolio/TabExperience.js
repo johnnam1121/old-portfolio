@@ -5,9 +5,9 @@ import { Col, Container, Nav, Row, Tab } from 'react-bootstrap';
 function TabExperience() {
   return (
     <Tab.Container defaultActiveKey="first" >
-      <Container id="ExperienceSection" fluid style={{ height: '80vh' }} className='shadow-sm mb-5'>
+      <Container id="ExperienceSection" fluid className='shadow-sm mb-5'>
         <Row>
-          <Col md={{ span: 6, offset: 3 }}>
+          <Col sm={{ span: 6, offset: 3 }}>
             <p className='paragraphs' style={{ color: '#00adb5' }}>Experience <hr /></p>
           </Col>
         </Row>

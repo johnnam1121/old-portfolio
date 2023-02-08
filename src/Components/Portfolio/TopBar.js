@@ -14,7 +14,7 @@ function TopBar() {
               <img src={process.env.PUBLIC_URL + "/Pictures/JNlogo.png"} alt="logo" width="30" height="30" className="d-inline-block align-top rounded" />{' '}
             </Navbar.Brand>
           </Col>
-          <Col sm={{ span: 5 }} className='mt-1 pt-2'>
+          <Col className='mt-1 pt-2'>
             <ul style={{ display: 'flex', listStyle: 'none', justifyContent: 'space-around' }}>
               <li className='scrollLink'><Link activeClass="active" to="IntroSection" smooth={false} duration={1000} offset={-100}>About Me</Link></li>
               <li className='scrollLink'><Link activeClass="active" to="ExperienceSection" smooth={false} duration={1000} offset={-100}>Experience</Link></li>

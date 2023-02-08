@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import { Container, Row, Col, Image } from 'react-bootstrap'
+import React, { Component } from 'react';
+import { Col, Container, Row } from 'react-bootstrap';
 import ModalPictures from './ModalPictures';
 class Experience extends Component {
   render() {

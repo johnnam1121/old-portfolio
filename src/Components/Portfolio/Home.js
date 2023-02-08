@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 import { Container, Row } from 'react-bootstrap';
-import SideBar from './SideBar';
-import ColorTest from './ColorTest';
 import Footer from './Footer';
 import Introduction from './Introduction';
 import LandingPage from './LandingPage';
 import './Portfolio.css';
 import Projects from './Projects';
+import SideBar from './SideBar';
 import TabExperience from './TabExperience';
 import TopBar from './TopBar';
 import TopButton from './TopButton';

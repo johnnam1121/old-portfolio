@@ -1,5 +1,5 @@
-import React, { Component, useState } from 'react'
-import { Modal, Image } from 'react-bootstrap';
+import React, { useState } from 'react';
+import { Image, Modal } from 'react-bootstrap';
 
 const ModalPictures = (props) => {
 
@@ -11,7 +11,7 @@ const ModalPictures = (props) => {
   return (
     <>
       <Image
-        style={{ width: '10vw', borderRadius:'20%' }}
+        style={{ width: '10vw', borderRadius: '20%' }}
         className='extraImg'
         src={props.Image}
         alt={props.AltTag}

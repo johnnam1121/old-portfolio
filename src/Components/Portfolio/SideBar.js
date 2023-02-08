@@ -1,10 +1,10 @@
-import React from 'react'
-import { Container, Col } from 'react-bootstrap'
-import { FaGithub, FaLinkedin, FaFacebook, FaInstagram } from "react-icons/fa";
+import React from 'react';
+import { Col } from 'react-bootstrap';
+import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 function SideBar() {
   return (
-    <Col className='sideBar p-3' sm={{ span: 1 }}>
+    <Col className='sideBar p-1' sm={{ span: 1 }}>
       <nav className="navbar">
         <ul className="navbar-nav">
           <li className="nav-item">

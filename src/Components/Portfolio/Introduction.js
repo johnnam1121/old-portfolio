@@ -4,7 +4,7 @@ import { Col, Container, Image, Row } from 'react-bootstrap'
 class Introduction extends Component {
   render() {
     return (
-      <Container fluid style={{ height: '80vh' }} className='shadow-sm mb-5'>
+      <Container fluid className='shadow-sm mb-5'>
         <Row id='IntroSection' className='mb-2' >
           <Col md={{ span: 6, offset: 2 }}>
             <p className='paragraphs' style={{ color: '#00adb5' }}>A Little About Me..<hr /></p>
