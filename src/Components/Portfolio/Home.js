@@ -21,9 +21,8 @@ class Home extends Component {
         <LandingPage />
         <Introduction />
         <TabExperience />
-        {/* <Experience /> */}
         <Projects />
-        <ColorTest />
+        {/* <ColorTest /> */}
         <TopButton />
         <Footer />
       </Container>

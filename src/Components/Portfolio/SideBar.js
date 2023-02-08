@@ -4,26 +4,24 @@ import { FaGithub, FaLinkedin, FaFacebook, FaInstagram } from "react-icons/fa";
 
 function SideBar() {
   return (
-    <Container fluid className='sideBar'>
-      <Col sm={{ span: 1 }}>
-        <nav className="navbar">
-          <ul className="navbar-nav">
-            <li className="nav-item">
-              <a href="#"><FaGithub className='iconSpacing' size="2vw" /></a>
-            </li>
-            <li className="nav-item">
-              <a href="#"><FaLinkedin className='iconSpacing' size="2vw"/></a>
-            </li>
-            <li className="nav-item">
-              <a href="#"><FaFacebook className='iconSpacing' size="2vw"/></a>
-            </li>
-            <li className="nav-item">
-              <a href="#"><FaInstagram className='iconSpacing' size="2vw"/></a>
-            </li>
-          </ul>
-        </nav>
-      </Col>
-    </Container>
+    <Col className='sideBar p-3' sm={{ span: 1 }}>
+      <nav className="navbar">
+        <ul className="navbar-nav">
+          <li className="nav-item">
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/johnnam1121"><FaGithub className='iconSpacing' size="2vw" /></a>
+          </li>
+          <li className="nav-item">
+            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/johnnam93/"><FaLinkedin className='iconSpacing' size="2vw" /></a>
+          </li>
+          <li className="nav-item">
+            <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/john.nam.98/"><FaFacebook className='iconSpacing' size="2vw" /></a>
+          </li>
+          <li className="nav-item">
+            <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/johnnam93/"><FaInstagram className='iconSpacing' size="2vw" /></a>
+          </li>
+        </ul>
+      </nav>
+    </Col>
   )
 }
 
