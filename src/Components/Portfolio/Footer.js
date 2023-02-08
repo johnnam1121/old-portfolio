@@ -17,9 +17,9 @@ function Footer() {
         </Col>
       </Row>
       <Row className='align-items-center mt-5' >
-        <Col sm={{ offset: 5 }}>
-          <p className='paragraphs'>© 2023 John Nam<br />
-            <a href='https://github.com/johnnam1121'>Github Repo</a></p>
+        <Col style={{ textAlign: 'center' }}>
+          <p className='paragraphs'>© 2023 John Nam - Website format inspired by: <a href='https://brittanychiang.com/'>Brittany Chiang</a><br />
+            <a href='https://github.com/johnnam1121'>My Github Repo</a>-<a href='https://github.com/bchiang7/v4'>Brittany's Repo</a></p>
         </Col>
       </Row>
     </Container >
