@@ -8,12 +8,9 @@ function Footer() {
         <Col className='align-self-center'>
           <p className='paragraphs' style={{ color: '#00adb5' }}>Contact<hr /></p>
           <h2 className='smallerProjectHeadings'>Let's get in touch!</h2>
-          <p className='paragraphs'>
-            My name is John and I teach computer science!
-            I built this website using React and Bootstrap.
-            Feel free to take a look around!
-          </p>
-          <a target="_blank" rel="noopener noreferrer" href="https://github.com/johnnam1121"><button className='button'>Check out my stuff!</button></a>
+          <p className='paragraphs'>I'm currently enjoying my position as a computer science teacher but am open to broadening my horizons! If you would like to chat, feel free to contact me at any time!</p>
+          <p className='paragraphs'>Johnnam93@gmail.com</p>
+          <a href="mailto: Johnnam93@gmail.com"><button className='button'>Contact Me</button></a>
         </Col>
       </Row>
       <Row className='align-items-center mt-5' >

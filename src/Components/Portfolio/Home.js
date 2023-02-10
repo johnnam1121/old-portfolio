@@ -21,7 +21,6 @@ class Home extends Component {
         <Introduction />
         <TabExperience />
         <Projects />
-        {/* <ColorTest /> */}
         <TopButton />
         <Footer />
       </Container>
@@ -29,3 +28,5 @@ class Home extends Component {
   }
 }
 export default Home
+
+{/* <ColorTest /> */ }

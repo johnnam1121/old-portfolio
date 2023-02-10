@@ -7,12 +7,35 @@ class Projects extends Component {
     return (
       <Container fluid id='ProjectsSection' className='shadow-sm mb-5'>
         <Row className='mt-5 mb-5'>
-          <Col sm={{span:8, offset:2}}>
+          <Col sm={{ span: 8, offset: 2 }}>
             <p className='paragraphs' style={{ color: '#00adb5' }}>Things I've Done <hr /></p>
           </Col>
         </Row>
         <Row className='mb-5'>
-          <Col className='mb-5' md={{ span: 5, offset: 1 }}>
+          <Col className='mb-5' sm={{ span: 5, offset: 1 }}>
+            <Image className='projectImg'
+              src={process.env.PUBLIC_URL + "/Pictures/starcraft.png"}
+              alt="IGNPic4"
+            />
+          </Col>
+          <Col className='mb-5'>
+            <h1 className='projectHeadings'>Current Project</h1>
+            <h2 className='smallerProjectHeadings'>
+              Starcraft 2 Unit Counter
+            </h2>
+            <ul className='projectParagraphs'>
+              <li>Built using React and Bootstrap</li>
+              <li>One of the games I enjoy playing is SC2. Since I stuggle with unit composition in the game, I wanted to make a visual, interactive cheatsheet</li>
+              <li>The webapp contains a units list page, a individual unit counter page that the player can interact with, and a team composition page to counter common team compositions.</li>
+              <li>The content and images were sourced from Carbot Animations, Liquidpedia, Osiris SC2 Guide, and from the game SC2 itself.</li>
+            </ul>
+            <p className='projectParagraphs'>
+              Starcraft 2 Unit Counter GitHub Repo <a href="https://github.com/johnnam1121/starcraft2-unit-counter" target="_blank" rel="noopener noreferrer">here</a>
+              <hr /></p>
+          </Col>
+        </Row>
+        <Row className='mb-5'>
+          <Col className='mb-5' sm={{ span: 5, offset: 1 }}>
             <Image className='projectImg'
               src={process.env.PUBLIC_URL + "/Pictures/littleLemon.png"}
               alt="IGNPic4"
@@ -35,11 +58,16 @@ class Projects extends Component {
             <p className='projectParagraphs'>
               Little Lemon GitHub Repo <a href="https://github.com/johnnam1121/littleLemon" target="_blank" rel="noopener noreferrer">here</a>
               <hr /></p>
-
           </Col>
         </Row>
         <Row>
-          <Col className='mb-5 mt-5' md={{ span: 5, offset: 1 }}>
+          <Col className='mb-5 mt-5' sm={{ span: 5, offset: 1 }}>
+            <Image className='projectImg'
+              src={process.env.PUBLIC_URL + "/Pictures/IGNPic4.png"}
+              alt="IGNPic4"
+            />
+          </Col>
+          <Col className='mb-5 mt-5'>
             <h1 className='projectHeadings'>IGN Code Foo</h1>
             <h2 className='smallerProjectHeadings'>
               Video Player Webapp for IGN's Code Foo
@@ -61,15 +89,9 @@ class Projects extends Component {
               IGN Code Foo GitHub Repo <a href="https://github.com/johntrieseverything/ignwebapp" target="_blank" rel="noopener noreferrer">here</a>
               <hr /></p>
           </Col>
-          <Col className='mb-5 mt-5'>
-            <Image className='projectImg'
-              src={process.env.PUBLIC_URL + "/Pictures/IGNPic4.png"}
-              alt="IGNPic4"
-            />
-          </Col>
         </Row>
         <Row className='mb-5'>
-          <Col className='mb-5 mt-5' md={{ span: 5, offset: 1 }}>
+          <Col className='mb-5 mt-5' sm={{ span: 5, offset: 1 }}>
             <Image className='projectImg'
               src={process.env.PUBLIC_URL + "/Pictures/SISPic1.png"}
               alt="SISPic1"
