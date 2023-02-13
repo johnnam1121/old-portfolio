@@ -6,12 +6,12 @@ class Introduction extends Component {
     return (
       <Container fluid className='shadow-sm mb-5'>
         <Row id='IntroSection' className='mb-2' >
-          <Col md={{ span: 6, offset: 2 }}>
+          <Col md={{ span: 6, offset: 3 }}>
             <p className='paragraphs' style={{ color: '#00adb5' }}>A Little About Me..<hr /></p>
           </Col>
         </Row>
         <Row className='mb-5'>
-          <Col md={{ span: 4, offset: 2 }}>
+          <Col md={{ span: 4, offset: 3 }}>
             <p className='paragraphs'>After graduating with a Bachelor's in Electrical and Computer Engineering from
               The University of Texas at Austin, I took quite an unorthodox career path. I started my career by opening
               a business franchise called Schlotzsky's where I learned all the ins and outs of a business. After some time,

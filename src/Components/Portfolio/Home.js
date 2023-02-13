@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Row } from 'react-bootstrap';
+
 import Footer from './Footer';
 import Introduction from './Introduction';
 import LandingPage from './LandingPage';
@@ -9,20 +10,37 @@ import SideBar from './SideBar';
 import TabExperience from './TabExperience';
 import TopBar from './TopBar';
 import TopButton from './TopButton';
+import FadeIntoView from './FadeIntoView';
 
 class Home extends Component {
   render() {
     return (
       <Container fluid className='background'>
-        <TopBar />
-        <SideBar />
+        <FadeIntoView>
+          <TopButton />
+        </FadeIntoView>
+        <FadeIntoView>
+          <TopBar />
+        </FadeIntoView>
+        <FadeIntoView>
+          <SideBar />
+        </FadeIntoView>
         <Row style={{ height: '20vh' }}></Row>
-        <LandingPage />
-        <Introduction />
-        <TabExperience />
-        <Projects />
-        <TopButton />
-        <Footer />
+        <FadeIntoView>
+          <LandingPage />
+        </FadeIntoView>
+        <FadeIntoView>
+          <Introduction />
+        </FadeIntoView>
+        <FadeIntoView>
+          <TabExperience />
+        </FadeIntoView>
+        <FadeIntoView>
+          <Projects />
+        </FadeIntoView>
+        <FadeIntoView>
+          <Footer />
+        </FadeIntoView>
       </Container>
     )
   }

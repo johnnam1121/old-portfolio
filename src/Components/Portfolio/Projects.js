@@ -5,20 +5,20 @@ import { Col, Container, Image, Row } from 'react-bootstrap'
 class Projects extends Component {
   render() {
     return (
-      <Container fluid id='ProjectsSection' className='shadow-sm mb-5'>
-        <Row className='mt-5 mb-5'>
-          <Col sm={{ span: 8, offset: 2 }}>
+      <Container fluid id='ProjectsSection' className='shadow-sm '>
+        <Row className='mt-5 '>
+          <Col md={{ span: 8, offset: 2 }}>
             <p className='paragraphs' style={{ color: '#00adb5' }}>Things I've Done <hr /></p>
           </Col>
         </Row>
         <Row className='mb-5'>
-          <Col className='mb-5' sm={{ span: 5, offset: 1 }}>
+          <Col md={{ span: 5, offset: 1 }}>
             <Image className='projectImg'
               src={process.env.PUBLIC_URL + "/Pictures/starcraft.png"}
               alt="IGNPic4"
             />
           </Col>
-          <Col className='mb-5'>
+          <Col>
             <h1 className='projectHeadings'>Current Project</h1>
             <h2 className='smallerProjectHeadings'>
               Starcraft 2 Unit Counter
@@ -35,13 +35,13 @@ class Projects extends Component {
           </Col>
         </Row>
         <Row className='mb-5'>
-          <Col className='mb-5' sm={{ span: 5, offset: 1 }}>
+          <Col md={{ span: 5, offset: 1 }}>
             <Image className='projectImg'
               src={process.env.PUBLIC_URL + "/Pictures/littleLemon.png"}
               alt="IGNPic4"
             />
           </Col>
-          <Col className='mb-5'>
+          <Col>
             <h1 className='projectHeadings'>Little Lemon</h1>
             <h2 className='smallerProjectHeadings'>
               Little Lemon Restaurant's Website
@@ -60,14 +60,14 @@ class Projects extends Component {
               <hr /></p>
           </Col>
         </Row>
-        <Row>
-          <Col className='mb-5 mt-5' sm={{ span: 5, offset: 1 }}>
+        <Row className='mb-5'>
+          <Col className=' mt-5' md={{ span: 5, offset: 1 }}>
             <Image className='projectImg'
               src={process.env.PUBLIC_URL + "/Pictures/IGNPic4.png"}
               alt="IGNPic4"
             />
           </Col>
-          <Col className='mb-5 mt-5'>
+          <Col className=' mt-5'>
             <h1 className='projectHeadings'>IGN Code Foo</h1>
             <h2 className='smallerProjectHeadings'>
               Video Player Webapp for IGN's Code Foo
@@ -91,13 +91,13 @@ class Projects extends Component {
           </Col>
         </Row>
         <Row className='mb-5'>
-          <Col className='mb-5 mt-5' sm={{ span: 5, offset: 1 }}>
+          <Col className=' mt-5' md={{ span: 5, offset: 1 }}>
             <Image className='projectImg'
               src={process.env.PUBLIC_URL + "/Pictures/SISPic1.png"}
               alt="SISPic1"
             />
           </Col>
-          <Col className='mb-5 mt-5'>
+          <Col className=' mt-5'>
             <h1 className='projectHeadings'>SIS Today Newspaper Site</h1>
             <h2 className='smallerProjectHeadings'>
               School Newspaper's Website
