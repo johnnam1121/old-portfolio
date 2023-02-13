@@ -18,7 +18,7 @@ class Projects extends Component {
               alt="IGNPic4"
             />
           </Col>
-          <Col>
+          <Col md={{ span: 5}}>
             <h1 className='projectHeadings'>Current Project</h1>
             <h2 className='smallerProjectHeadings'>
               Starcraft 2 Unit Counter
@@ -41,7 +41,7 @@ class Projects extends Component {
               alt="IGNPic4"
             />
           </Col>
-          <Col>
+          <Col  md={{ span: 5}}>
             <h1 className='projectHeadings'>Little Lemon</h1>
             <h2 className='smallerProjectHeadings'>
               Little Lemon Restaurant's Website
@@ -67,7 +67,7 @@ class Projects extends Component {
               alt="IGNPic4"
             />
           </Col>
-          <Col className=' mt-5'>
+          <Col  md={{ span: 5}}>
             <h1 className='projectHeadings'>IGN Code Foo</h1>
             <h2 className='smallerProjectHeadings'>
               Video Player Webapp for IGN's Code Foo
@@ -97,7 +97,7 @@ class Projects extends Component {
               alt="SISPic1"
             />
           </Col>
-          <Col className=' mt-5'>
+          <Col md={{ span: 5}}>
             <h1 className='projectHeadings'>SIS Today Newspaper Site</h1>
             <h2 className='smallerProjectHeadings'>
               School Newspaper's Website
