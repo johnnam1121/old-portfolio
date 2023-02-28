@@ -11,15 +11,43 @@ class Projects extends Component {
             <p className='paragraphs' style={{ color: '#00adb5' }}>Things I've Done <hr /></p>
           </Col>
         </Row>
-        <Row className='mb-5'>
-          <Col md={{ span: 5, offset: 1 }}>
+        <Row className='mb-2'>
+          <Col md={{ span: 4, offset: 2 }}>
+            <Image className='projectImg'
+              src={process.env.PUBLIC_URL + "/Pictures/job scraper.png"}
+              alt="IGNPic4"
+            />
+          </Col>
+          <Col className='mt-2' md={{ span: '4' }}>
+            <h1 className='projectHeadings'>Current Project</h1>
+            <h2 className='smallerProjectHeadings'>
+              Job Post Website Scraper
+            </h2>
+            <ul className='projectParagraphs'>
+              <li>This project is being built using Python with Beautiful Soup Method. Python is a language I do not have much
+                experience with so I find this a good way to get some practice.
+              </li>
+              <li>Rather than browsing job boards and having to look through tons of unrelated jobs at companies I am not interested in,
+                I wanted to make a job post scraper that looks through specific companies websites and filters according to certain keywords.
+              </li>
+              <li>This will be a program I run daily. It will check to see if the job was posted within the past day then populate some links to apply
+                for the newly posted job.
+              </li>
+            </ul>
+            <p className='projectParagraphs'>
+              Starcraft 2 Unit Counter GitHub Repo <a href="https://github.com/johnnam1121/starcraft2-unit-counter" target="_blank" rel="noopener noreferrer">here</a>
+              <hr /></p>
+          </Col>
+        </Row>
+        <Row className='mb-2'>
+          <Col md={{ span: 4, offset: 2 }}>
             <Image className='projectImg'
               src={process.env.PUBLIC_URL + "/Pictures/starcraft.png"}
               alt="IGNPic4"
             />
           </Col>
-          <Col md={{ span: 5}}>
-            <h1 className='projectHeadings'>Current Project</h1>
+          <Col className='mt-2' md={{ span: '4' }}>
+            <h1 className='projectHeadings'>Starcraft 2</h1>
             <h2 className='smallerProjectHeadings'>
               Starcraft 2 Unit Counter
             </h2>
@@ -30,18 +58,19 @@ class Projects extends Component {
               <li>The content and images were sourced from Carbot Animations, Liquidpedia, Osiris SC2 Guide, and from the game SC2 itself.</li>
             </ul>
             <p className='projectParagraphs'>
+              Live page <a href="https://johntrieseverything.github.io/starcraft2-unit-counter" target="_blank" rel="noopener noreferrer">here</a><br/>
               Starcraft 2 Unit Counter GitHub Repo <a href="https://github.com/johnnam1121/starcraft2-unit-counter" target="_blank" rel="noopener noreferrer">here</a>
               <hr /></p>
           </Col>
         </Row>
-        <Row className='mb-5'>
-          <Col md={{ span: 5, offset: 1 }}>
+        <Row className='mb-2'>
+          <Col md={{ span: 4, offset: 2 }}>
             <Image className='projectImg'
               src={process.env.PUBLIC_URL + "/Pictures/littleLemon.png"}
               alt="IGNPic4"
             />
           </Col>
-          <Col  md={{ span: 5}}>
+          <Col className='mt-2' md={{ span: 4 }}>
             <h1 className='projectHeadings'>Little Lemon</h1>
             <h2 className='smallerProjectHeadings'>
               Little Lemon Restaurant's Website
@@ -56,21 +85,22 @@ class Projects extends Component {
               <li>The layout of the website was created using Figma</li>
             </ul>
             <p className='projectParagraphs'>
+              Live page <a href="https://johnnam1121.github.io/littleLemon" target="_blank" rel="noopener noreferrer">here</a><br />
               Little Lemon GitHub Repo <a href="https://github.com/johnnam1121/littleLemon" target="_blank" rel="noopener noreferrer">here</a>
               <hr /></p>
           </Col>
         </Row>
-        <Row className='mb-5'>
-          <Col className=' mt-5' md={{ span: 5, offset: 1 }}>
+        <Row className='mb-2'>
+          <Col className='' md={{ span: 4, offset: 2 }}>
             <Image className='projectImg'
               src={process.env.PUBLIC_URL + "/Pictures/IGNPic4.png"}
               alt="IGNPic4"
             />
           </Col>
-          <Col  md={{ span: 5}}>
+          <Col className='mt-2' md={{ span: 4 }}>
             <h1 className='projectHeadings'>IGN Code Foo</h1>
             <h2 className='smallerProjectHeadings'>
-              Video Player Webapp for IGN's Code Foo
+              Video Player Webapp
             </h2>
             <ul className='projectParagraphs'>
               <li>IGN's API has a CORS restriction so I have my program check
@@ -86,18 +116,18 @@ class Projects extends Component {
                 scale suggested video for user friendlyness.</li>
             </ul>
             <p className='projectParagraphs'>
-              IGN Code Foo GitHub Repo <a href="https://github.com/johntrieseverything/ignwebapp" target="_blank" rel="noopener noreferrer">here</a>
+              IGN Code Foo GitHub Repo <a href="https://github.com/johnnam1121/ignwebapp" target="_blank" rel="noopener noreferrer">here</a>
               <hr /></p>
           </Col>
         </Row>
         <Row className='mb-5'>
-          <Col className=' mt-5' md={{ span: 5, offset: 1 }}>
+          <Col md={{ span: 4, offset: 2 }}>
             <Image className='projectImg'
               src={process.env.PUBLIC_URL + "/Pictures/SISPic1.png"}
               alt="SISPic1"
             />
           </Col>
-          <Col md={{ span: 5}}>
+          <Col className="mt-2" md={{ span: 4 }}>
             <h1 className='projectHeadings'>SIS Today Newspaper Site</h1>
             <h2 className='smallerProjectHeadings'>
               School Newspaper's Website
@@ -115,7 +145,7 @@ class Projects extends Component {
               <hr /></p>
           </Col>
         </Row>
-      </Container>
+      </Container >
     )
   }
 }
