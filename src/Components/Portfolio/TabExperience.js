@@ -31,7 +31,7 @@ function TabExperience() {
               </Nav.Item>
             </Nav>
           </Col>
-          <Col className='nav-pills mt-3' md={{ span: 4 }}>
+          <Col className='nav-pills mt-3' md={{ span: 5 }}>
             <Tab.Content>
               <Tab.Pane eventKey="first">
                 <h4 style={{ color: '#eeeeee' }}>Computer Science Teacher</h4>
@@ -63,7 +63,7 @@ function TabExperience() {
                 </ul>
               </Tab.Pane>
               <Tab.Pane eventKey="third">
-                <h4 style={{ color: '#eeeeee' }}>Electrical and Computer Engineer</h4>
+                <h4 style={{ color: '#eeeeee' }}>Electrical and Computer Engineering</h4>
                 <h6 style={{ color: '#bbbbbb' }}>2012 - 2017</h6>
                 <ul style={{ color: '#777777' }}>
                   <li>Cockrell School of Engineering</li>

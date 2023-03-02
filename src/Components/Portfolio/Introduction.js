@@ -16,8 +16,8 @@ class Introduction extends Component {
               The University of Texas at Austin, I took quite an unorthodox career path. I started my career by opening
               a business franchise called Schlotzsky's where I learned all the ins and outs of a business. After some time,
               I was encouraged by my sister to pursue teaching which is where I am now. I've been teaching computer science
-              for about 3 years now and am enjoying it very much! I built this website as an example website for my students
-              and who knows, maybe it will help me add a new career to my repertoire!
+              for about 3 years now and am enjoying it very much! I am however, still open to broadening my horizens and am open
+              to offers. Feel free to send me an email if you'd like to chat!
             </p>
             <Row >
               <p className='paragraphs'>Here are some of my related skills </p>

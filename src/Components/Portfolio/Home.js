@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Container, Row } from 'react-bootstrap';
 
+import FadeIntoView from './FadeIntoView';
 import Footer from './Footer';
 import Introduction from './Introduction';
 import LandingPage from './LandingPage';
@@ -10,7 +11,6 @@ import SideBar from './SideBar';
 import TabExperience from './TabExperience';
 import TopBar from './TopBar';
 import TopButton from './TopButton';
-import FadeIntoView from './FadeIntoView';
 
 class Home extends Component {
   render() {

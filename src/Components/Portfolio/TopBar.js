@@ -1,5 +1,5 @@
 import React from 'react';
-import { Col, Container, Navbar, Row, Nav } from 'react-bootstrap';
+import { Col, Container, Navbar, Row } from 'react-bootstrap';
 import { Link } from 'react-scroll';
 import pdf from './John Nam Resume.pdf';
 

@@ -11,20 +11,19 @@ const ModalPictures = (props) => {
   return (
     <>
       <Image
-        style={{ width: '10vw', borderRadius: '20%' }}
-        className='extraImg'
-        src={props.Image}
-        alt={props.AltTag}
+        className='projectImg'
+        src={props.img}
+        alt={props.alt}
         onClick={handleShow} />
       <Modal show={show} onHide={handleClose}>
-        <Modal.Header className="component" closeButton>
-          <Modal.Title className="commentary">{props.Title}</Modal.Title>
+        <Modal.Header className="background" closeButton>
+          <Modal.Title className="smallerProjectHeadings">{props.title}</Modal.Title>
         </Modal.Header>
-        <Modal.Body className="component" >
-          <Image src={props.Image} alt={props.AltTag} fluid />
+        <Modal.Body className="background" >
+          <Image src={props.img} alt={props.alt} fluid />
         </Modal.Body>
-        <Modal.Footer className="component" >
-          <p className="commentary">{props.Body}</p>
+        <Modal.Footer className="background" >
+          <p className="projectParagraphs">{props.body}</p>
         </Modal.Footer>
       </Modal>
     </>
