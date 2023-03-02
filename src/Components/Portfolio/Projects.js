@@ -35,7 +35,7 @@ class Projects extends Component {
               </li>
             </ul>
             <p className='projectParagraphs'>
-              Starcraft 2 Unit Counter GitHub Repo <a href="https://github.com/johnnam1121/starcraft2-unit-counter" target="_blank" rel="noopener noreferrer">here</a>
+              Job Post Scraper Repo <a href="https://github.com/johnnam1121/job-post-scraper" target="_blank" rel="noopener noreferrer">here</a>
               <hr /></p>
           </Col>
         </Row>
@@ -58,7 +58,7 @@ class Projects extends Component {
               <li>The content and images were sourced from Carbot Animations, Liquidpedia, Osiris SC2 Guide, and from the game SC2 itself.</li>
             </ul>
             <p className='projectParagraphs'>
-              Live page <a href="https://johntrieseverything.github.io/starcraft2-unit-counter" target="_blank" rel="noopener noreferrer">here</a><br/>
+              Live page <a href="https://johntrieseverything.github.io/starcraft2-unit-counter" target="_blank" rel="noopener noreferrer">here</a><br />
               Starcraft 2 Unit Counter GitHub Repo <a href="https://github.com/johnnam1121/starcraft2-unit-counter" target="_blank" rel="noopener noreferrer">here</a>
               <hr /></p>
           </Col>
