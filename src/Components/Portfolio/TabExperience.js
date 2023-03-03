@@ -6,13 +6,13 @@ function TabExperience() {
   return (
     <Tab.Container defaultActiveKey="first" >
       <Container id="ExperienceSection" fluid className='shadow-sm mb-5'>
-        <Row>
+        <Row style={{marginTop: '20vh'}}>
           <Col md={{ span: 6, offset: 3 }}>
             <p className='paragraphs' style={{ color: '#00adb5' }}>Experience <hr /></p>
           </Col>
         </Row>
-        <Row className='mb-5'>
-          <Col className='tabButton' md={{ span: 2, offset: 3 }}>
+        <Row style={{marginBottom: '20vh'}}>
+          <Col className='tabButton' md={{ span: 2, offset: 3 }} >
             <Nav fill variant='tabs' defaultActiveKey="/home" className="flex-column">
               <Nav.Item >
                 <Nav.Link
@@ -31,7 +31,7 @@ function TabExperience() {
               </Nav.Item>
             </Nav>
           </Col>
-          <Col className='nav-pills mt-3' md={{ span: 5 }}>
+          <Col className='nav-pills mt-3' md={{ span: 5 }} >
             <Tab.Content>
               <Tab.Pane eventKey="first">
                 <h4 style={{ color: '#eeeeee' }}>Computer Science Teacher</h4>

@@ -164,7 +164,9 @@ a:hover {
   cursor: pointer;
 }
 
-
+.modalPic {
+  min-width: 50%;
+}
 
 
 h1 {

@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import { Col, Container, Image, Row } from 'react-bootstrap'
 import ModalPictures from './ModalPictures'
 
-
 class Projects extends Component {
   render() {
     return (
@@ -13,18 +12,18 @@ class Projects extends Component {
           </Col>
         </Row>
         <Row className='mb-2'>
-          <Col md={{ span: 4, offset: 2 }}>
+          <Col className='mb-5' md={{ span: 4, offset: 2 }}>
             <ModalPictures
               img={process.env.PUBLIC_URL + "/Pictures/job scraper.png"}
               alt='job scraper vscode pic'
               title='Job Post Website Scraper'
-              body='Job post website scraper using python and beautifulsoup4 and selenium to run some scripts. The goal is to have the program search 
-              through specific website of some companies websites and find jobs that are relevant to me to apply to. It will search job titles based on 
-              some keywords and print the title, location, and link to apply. 
-              This is more efficient for me than scanning through indeed or linkedin which has a lot of unrelated/spammy jobs. 
-              Each python file is made specifically for each job site since each site uses different html names and etc. Therefore, 
-              I made a batch file which will run all the python files at once. Once I get each python file set up for all the companies 
-              I would like to work for, I will add a feature to save the printed info into a csv file for ease of use. 
+              body='Job post website scraper using python and beautifulsoup4 and selenium to run some scripts. The goal is to have the program search
+              through specific website of some companies websites and find jobs that are relevant to me to apply to. It will search job titles based on
+              some keywords and print the title, location, and link to apply.
+              This is more efficient for me than scanning through indeed or linkedin which has a lot of unrelated/spammy jobs.
+              Each python file is made specifically for each job site since each site uses different html names and etc. Therefore,
+              I made a batch file which will run all the python files at once. Once I get each python file set up for all the companies
+              I would like to work for, I will add a feature to save the printed info into a csv file for ease of use.
               Also, if I will try to add a feature where it runs daily at 8am. No idea how I would start that though..'
             />
           </Col>
@@ -44,7 +43,7 @@ class Projects extends Component {
           </Col>
         </Row>
         <Row className='mb-2'>
-          <Col md={{ span: 4, offset: 2 }}>
+          <Col className='mb-5' md={{ span: 4, offset: 2 }}>
             <ModalPictures
               img={process.env.PUBLIC_URL + "/Pictures/starcraft.png"}
               alt='starcraft png'
@@ -70,7 +69,7 @@ class Projects extends Component {
           </Col>
         </Row>
         <Row className='mb-2'>
-          <Col md={{ span: 4, offset: 2 }}>
+          <Col className='mb-5' md={{ span: 4, offset: 2 }}>
             <ModalPictures
               img={process.env.PUBLIC_URL + "/Pictures/littleLemon.png"}
               alt='Little Lemon'
@@ -98,7 +97,7 @@ class Projects extends Component {
           </Col>
         </Row>
         <Row className='mb-2'>
-          <Col className='' md={{ span: 4, offset: 2 }}>
+          <Col className='mb-5' md={{ span: 4, offset: 2 }}>
             <ModalPictures
               img={process.env.PUBLIC_URL + "/Pictures/IGNPic4.png"}
               alt='IGNPic4'
@@ -124,7 +123,7 @@ class Projects extends Component {
           </Col>
         </Row>
         <Row className='mb-5'>
-          <Col md={{ span: 4, offset: 2 }}>
+          <Col className='mb-5' md={{ span: 4, offset: 2 }}>
             <ModalPictures
               img={process.env.PUBLIC_URL + "/Pictures/SISPic1.png"}
               alt='SISPic1'
