@@ -16,11 +16,12 @@ class Introduction extends Component {
               The University of Texas at Austin, I took quite an unorthodox career path. I started my career by opening
               a business franchise called Schlotzsky's where I learned all the ins and outs of a business. After some time,
               I was encouraged by my sister to pursue teaching which is where I am now. I've been teaching computer science
-              for about 3 years now and am enjoying it very much! I am however, still open to broadening my horizens and am open
-              to offers. Feel free to send me an email if you'd like to chat!
+              for about 3 years now and am enjoying it very much! However, I am open to new opportunities where I can learn and furthur 
+              develop my programming skills. If you'd like to chat, please feel free to reach out using the contact me section at the bottom 
+              of the page!
             </p>
             <Row >
-              <p className='paragraphs'>Here are some of my related skills </p>
+              <p className='paragraphs'>Here are some technologies I use </p>
               <Col>
                 <ul className='paragraphs'>
                   <li>React</li>
