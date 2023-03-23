@@ -17,8 +17,6 @@ function Footer() {
         <Col style={{ textAlign: 'center' }}>
           <p className='paragraphs'>Everything was written by me.
             Feel free to clone my code! <a href='https://github.com/johnnam1121'>My Github Repo</a>  <br />
-
-
             Website format inspired by: <a href='https://brittanychiang.com/'>Brittany Chiang</a><br />
             © 2023 John Nam</p>
         </Col>
