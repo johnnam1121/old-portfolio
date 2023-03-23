@@ -4,7 +4,7 @@ import { Col, Container, Row } from 'react-bootstrap'
 function Footer() {
   return (
     <Container fluid  >
-      <Row id='ContactSection' className='align-items-center mt-3' >
+      <Row id='ContactSection' className='align-items-center' style={{ marginTop: '25vh', marginBottom: '25vh' }}>
         <Col className='align-self-center' sm={{ span: 6, offset: 3 }}>
           <p className='paragraphs' style={{ color: '#00adb5' }}>Contact<hr /></p>
           <h2 className='smallerProjectHeadings'>Let's get in touch!</h2>

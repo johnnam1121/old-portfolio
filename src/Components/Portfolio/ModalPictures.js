@@ -29,6 +29,10 @@ const ModalPictures = (props) => {
         </Modal.Body>
         <Modal.Footer className="background" >
           <p className="projectParagraphs">{props.body}</p>
+          <p className='carouselParagraphs'>
+            Github Repo <a href={props.repo} target="_blank" rel="noopener noreferrer">here</a><br />
+            View the website here: <a href={props.live} target="_blank" rel="noopener noreferrer">{props.livepage}</a><br />
+          </p>
         </Modal.Footer>
       </Modal>
     </div>

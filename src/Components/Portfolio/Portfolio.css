@@ -54,7 +54,8 @@
 }
 
 .projectImg {
-  width: 90%;
+  height: 50vh;
+  width: 50vw;
   border: #00adb5;
   border-style: solid;
   border-radius: 20%;
@@ -62,6 +63,10 @@
   margin-left: auto;
   margin-right: auto;
   display: block;
+}
+
+.modalPic {
+  min-width: 70%;
 }
 
 .projectHeadings {
@@ -164,11 +169,6 @@ a:hover {
   cursor: pointer;
 }
 
-.modalPic {
-  min-width: 50%;
-}
-
-
 h1 {
   color: #00adb5;
   font-size: 10vh;
@@ -185,6 +185,22 @@ p {
   color: #393e46;
   font-size: 2vh;
   font-family: sans-serif;
+}
+
+.carouselCaption {
+  background-color: rgba(34, 40, 49, 0.3)
+}
+
+.carouselParagraphs {
+  color: #eeeeee;
+
+}
+
+.topbar {
+  width:100%;
+  position: fixed;
+  background-color: #222831;
+  z-index: 2;
 }
 
 .backgroundtest {

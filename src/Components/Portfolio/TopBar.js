@@ -6,7 +6,7 @@ import pdf from './John Nam Resume.pdf';
 function TopBar() {
   return (
     <Container fluid >
-      <Row className='shadow-lg align-items-center' style={{ width: '100%', position: 'fixed', backgroundColor: '#222831' }}>
+      <Row className='shadow-lg align-items-center topbar'>
         <Col>
           <Navbar.Brand href="/portfolio/">
             <img src={process.env.PUBLIC_URL + "/Pictures/JNlogo.png"} alt="logo" width="30" height="30" className="d-inline-block align-top rounded" />

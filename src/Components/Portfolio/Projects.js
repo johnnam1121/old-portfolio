@@ -1,18 +1,41 @@
 import React, { Component } from 'react'
-import { Col, Container, Image, Row } from 'react-bootstrap'
+import { Carousel, Col, Container, Row } from 'react-bootstrap'
 import ModalPictures from './ModalPictures'
 
 class Projects extends Component {
   render() {
     return (
-      <Container fluid id='ProjectsSection' className='shadow-sm '>
+      <Container fluid id='ProjectsSection' className='shadow-sm'>
         <Row className='mt-5 '>
           <Col md={{ span: 8, offset: 2 }}>
             <p className='paragraphs' style={{ color: '#00adb5' }}>Things I've Done <hr /></p>
+            <p className='paragraphs' >Click the images for more info!</p>
           </Col>
         </Row>
-        <Row className='mb-2'>
-          <Col className='mb-5' md={{ span: 4, offset: 2 }}>
+        <Carousel>
+          <Carousel.Item interval={3000}>
+            <ModalPictures
+              img={process.env.PUBLIC_URL + "/Pictures/chat-app.png"}
+              alt='chat app pic'
+              title='Live Chat app'
+              body='The goal of this is to create a real time chat application from scratch using react for the client side and nodejs for the server side. I am using react 
+              so I can deploy it using gh-pages eventually. For the back end, I am using express to create the server and socket.IO to communicate between the client and server.
+              I am doing this to get some practice using Nodejs. I am honestly kind of struggling with it since majority of the tutorials make no sense and are too complex. I am 
+              trying to make it easier on myself by starting from the beginning and breaking it up into managable chunks. So far I got the client and server side communicating with each
+              other. I finished the active users section and am starting to build the chat function. Breaking up the users into rooms is a little over my head right now so I will work
+              on that after I finish the chat function. Once the backend is complete, I will make the app look pretty which is the easy part imo.'
+              repo="https://github.com/johnnam1121/job-post-scraper"
+              livepage='Unavailable'
+            />
+            <Carousel.Caption>
+              <Row className='carouselCaption' style={{ width: '50%', marginRight: 'auto', marginLeft: 'auto' }}>
+                <h4>Current Project</h4>
+                <h4>Live Chat app</h4>
+                <p className='carouselParagraphs'>Repo <a href="https://github.com/johnnam1121/job-post-scraper" target="_blank" rel="noopener noreferrer">here</a></p>
+              </Row>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item interval={3000}>
             <ModalPictures
               img={process.env.PUBLIC_URL + "/Pictures/job scraper.png"}
               alt='job scraper vscode pic'
@@ -25,25 +48,18 @@ class Projects extends Component {
               I made a batch file which will run all the python files at once. Once I get each python file set up for all the companies
               I would like to work for, I will add a feature to save the printed info into a csv file for ease of use.
               Also, if I will try to add a feature where it runs daily at 8am. No idea how I would start that though..'
+              repo="https://github.com/johnnam1121/job-post-scraper"
+              livepage='Unavailable'
             />
-          </Col>
-          <Col className='mt-2' md={{ span: '4' }}>
-            <h1 className='projectHeadings'>Current Project</h1>
-            <h2 className='smallerProjectHeadings'>
-              Job Post Website Scraper
-            </h2>
-            <ul className='projectParagraphs'>
-              <li>This project is being built using Python with Beautiful Soup Method. Python is a language I do not have much
-                experience with so I find this a good way to get some practice.</li>
-              <li>Click the image for more info!</li>
-            </ul>
-            <p className='projectParagraphs'>
-              Job Post Scraper Repo <a href="https://github.com/johnnam1121/job-post-scraper" target="_blank" rel="noopener noreferrer">here</a>
-              <hr /></p>
-          </Col>
-        </Row>
-        <Row className='mb-2'>
-          <Col className='mb-5' md={{ span: 4, offset: 2 }}>
+            <Carousel.Caption>
+              <Row className='carouselCaption' style={{ width: '50%', marginRight: 'auto', marginLeft: 'auto' }}>
+                <h4>Current Project</h4>
+                <h4>Job Post Website Scraper</h4>
+                <p className='carouselParagraphs'>Repo <a href="https://github.com/johnnam1121/job-post-scraper" target="_blank" rel="noopener noreferrer">here</a></p>
+              </Row>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item interval={3000}>
             <ModalPictures
               img={process.env.PUBLIC_URL + "/Pictures/starcraft.png"}
               alt='starcraft png'
@@ -51,25 +67,21 @@ class Projects extends Component {
               body='One of the games I enjoy playing is SC2. Since I stuggle with unit composition in the game, I wanted to make a visual, interactive cheatsheet
               The webapp contains a units list page, a individual unit counter page that the player can interact with, and a team composition page to counter common team compositions.
               The content and images were sourced from Carbot Animations, Liquidpedia, Osiris SC2 Guide, and from the game SC2 itself.'
+              repo="https://github.com/johnnam1121/starcraft2-unit-counter"
+              live="https://johntrieseverything.github.io/starcraft2-unit-counter"
+              livepage='Live Page'
             />
-          </Col>
-          <Col className='mt-2' md={{ span: '4' }}>
-            <h1 className='projectHeadings'>Starcraft 2</h1>
-            <h2 className='smallerProjectHeadings'>
-              Starcraft 2 Unit Counter
-            </h2>
-            <ul className='projectParagraphs'>
-              <li>Built using React and Bootstrap</li>
-              <li>Click the image for more info!</li>
-            </ul>
-            <p className='projectParagraphs'>
-              Live page <a href="https://johntrieseverything.github.io/starcraft2-unit-counter" target="_blank" rel="noopener noreferrer">here</a><br />
-              Starcraft 2 Unit Counter GitHub Repo <a href="https://github.com/johnnam1121/starcraft2-unit-counter" target="_blank" rel="noopener noreferrer">here</a>
-              <hr /></p>
-          </Col>
-        </Row>
-        <Row className='mb-2'>
-          <Col className='mb-5' md={{ span: 4, offset: 2 }}>
+            <Carousel.Caption>
+              <Row className='carouselCaption' style={{ width: '50%', marginRight: 'auto', marginLeft: 'auto' }}>
+                <h4>Starcraft 2 Unit Counter</h4>
+                <p className='carouselParagraphs'>
+                  Live page <a href="https://johntrieseverything.github.io/starcraft2-unit-counter" target="_blank" rel="noopener noreferrer">here</a><br />
+                  Starcraft 2 Unit Counter GitHub Repo <a href="https://github.com/johnnam1121/starcraft2-unit-counter" target="_blank" rel="noopener noreferrer">here</a>
+                </p>
+              </Row>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item interval={3000}>
             <ModalPictures
               img={process.env.PUBLIC_URL + "/Pictures/littleLemon.png"}
               alt='Little Lemon'
@@ -79,25 +91,21 @@ class Projects extends Component {
               Some of the requirements were to develop a home page and a reservation page
               The reservation form requires client-side validation before submitting
               The layout of the website was created using Figma'
+              repo="https://github.com/johnnam1121/littleLemon"
+              live="https://johnnam1121.github.io/littleLemon"
+              livepage='Live Page'
             />
-          </Col>
-          <Col className='mt-2' md={{ span: 4 }}>
-            <h1 className='projectHeadings'>Little Lemon</h1>
-            <h2 className='smallerProjectHeadings'>
-              Little Lemon Restaurant's Website
-            </h2>
-            <ul className='projectParagraphs'>
-              <li>Built using React and Bootstrap. All assets were provided by meta</li>
-              <li>Click the image for more info!</li>
-            </ul>
-            <p className='projectParagraphs'>
-              Live page <a href="https://johnnam1121.github.io/littleLemon" target="_blank" rel="noopener noreferrer">here</a><br />
-              Little Lemon GitHub Repo <a href="https://github.com/johnnam1121/littleLemon" target="_blank" rel="noopener noreferrer">here</a>
-              <hr /></p>
-          </Col>
-        </Row>
-        <Row className='mb-2'>
-          <Col className='mb-5' md={{ span: 4, offset: 2 }}>
+            <Carousel.Caption>
+              <Row className='carouselCaption' style={{ width: '50%', marginRight: 'auto', marginLeft: 'auto' }}>
+                <h4>Little Lemon</h4>
+                <p className='carouselParagraphs'>
+                  Live page <a href="https://johnnam1121.github.io/littleLemon" target="_blank" rel="noopener noreferrer">here</a><br />
+                  Little Lemon GitHub Repo <a href="https://github.com/johnnam1121/littleLemon" target="_blank" rel="noopener noreferrer">here</a>
+                </p>
+              </Row>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item interval={3000}>
             <ModalPictures
               img={process.env.PUBLIC_URL + "/Pictures/IGNPic4.png"}
               alt='IGNPic4'
@@ -106,24 +114,19 @@ class Projects extends Component {
               redirects to another page that grants temporary access. Has a main video player which includes a title, description, and tags. On the right is a suggested
               video playlist An accordian which shows a load more list of suggested videos was implemented. Some features include, on click - play
               selected video, on video over - play next video, on hover-scale suggested video for user friendlyness.'
+              repo="https://github.com/johnnam1121/ignwebapp"
+              livepage='Unavailable'
             />
-          </Col>
-          <Col className='mt-2' md={{ span: 4 }}>
-            <h1 className='projectHeadings'>IGN Code Foo</h1>
-            <h2 className='smallerProjectHeadings'>
-              Video Player Webapp
-            </h2>
-            <ul className='projectParagraphs'>
-              <li>Created a video player using react and bootstrap for IGN's code foo project</li>
-              <li>Click the image for more info!</li>
-            </ul>
-            <p className='projectParagraphs'>
-              IGN Code Foo GitHub Repo <a href="https://github.com/johnnam1121/ignwebapp" target="_blank" rel="noopener noreferrer">here</a>
-              <hr /></p>
-          </Col>
-        </Row>
-        <Row className='mb-5'>
-          <Col className='mb-5' md={{ span: 4, offset: 2 }}>
+            <Carousel.Caption>
+              <Row className='carouselCaption' style={{ width: '50%', marginRight: 'auto', marginLeft: 'auto' }}>
+                <h4>IGN Video Player</h4>
+                <p className='carouselParagraphs'>
+                  IGN Code Foo GitHub Repo <a href="https://github.com/johnnam1121/ignwebapp" target="_blank" rel="noopener noreferrer">here</a>
+                </p>
+              </Row>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item interval={3000}>
             <ModalPictures
               img={process.env.PUBLIC_URL + "/Pictures/SISPic1.png"}
               alt='SISPic1'
@@ -132,22 +135,19 @@ class Projects extends Component {
               see the difference between using a website builder and building a website from scratch
               This website has a home page for latest posts and another page to show previous posts sorted by date
               The website was used as an opportunity for students to learn how to use website builders. It is now moderated by the students'
+              livepage='Live Page'
+              live="https://sistodaynews.wordpress.com/"
             />
-          </Col>
-          <Col className="mt-2" md={{ span: 4 }}>
-            <h1 className='projectHeadings'>SIS Today Newspaper Site</h1>
-            <h2 className='smallerProjectHeadings'>
-              School Newspaper's Website
-            </h2>
-            <ul className='projectParagraphs'>
-              <li>This website was created using WordPress</li>
-              <li>Click the image for more info!</li>
-            </ul>
-            <p className='projectParagraphs'>
-              SIS Today Newspaper Website <a href="https://sistodaynews.wordpress.com/" target="_blank" rel="noopener noreferrer">here</a>
-              <hr /></p>
-          </Col>
-        </Row>
+            <Carousel.Caption>
+              <Row className='carouselCaption' style={{ width: '50%', marginRight: 'auto', marginLeft: 'auto' }}>
+                <h4>SIS Today Newspaper</h4>
+                <p className='carouselParagraphs'>
+                  SIS Today Newspaper Website <a href="https://sistodaynews.wordpress.com/" target="_blank" rel="noopener noreferrer">here</a>
+                </p>
+              </Row>
+            </Carousel.Caption>
+          </Carousel.Item>
+        </Carousel>
       </Container >
     )
   }
