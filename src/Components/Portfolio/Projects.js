@@ -15,6 +15,30 @@ class Projects extends Component {
         <Carousel>
           <Carousel.Item interval={3000}>
             <ModalPictures
+              img={process.env.PUBLIC_URL + "/Pictures/Oneshot.png"}
+              alt='Oneshot'
+              title='Oneshot'
+              body='Created a website for a friends restaurant/karaoke bar 
+              using react and bootstrap. For the gallery and reservations, I thought about making 
+              some backend servers but I wanted the website to be as simple as possible and static 
+              so it is easy for my friend to manage. The only part that uses a backend is the contact/email 
+              section which uses formspree as the api. The reservation section uses Calendy as a component 
+              so I didnt have to make a backend.'
+              repo="https://github.com/johnnam1121/one-shot-pocha"
+              live="https://johnnam1121.github.io/one-shot-pocha/"
+              livepage='Live Page'
+            />
+            <Carousel.Caption>
+              <Row className='carouselCaption' style={{ width: '50%', marginRight: 'auto', marginLeft: 'auto' }}>
+                <h4>Current Project</h4>
+                <h4>Live Chat app</h4>
+                <p className='carouselParagraphs'>Repo <a href="https://github.com/johnnam1121/job-post-scraper" target="_blank" rel="noopener noreferrer">here</a><br />
+                  Live Page <a href="https://johnnam1121.github.io/one-shot-pocha" target="_blank" rel="noopener noreferrer">here</a></p>
+              </Row>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item interval={3000}>
+            <ModalPictures
               img={process.env.PUBLIC_URL + "/Pictures/chat-app.png"}
               alt='chat app pic'
               title='Live Chat app'
