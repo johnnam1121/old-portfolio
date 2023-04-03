@@ -1,0 +1,50 @@
+.projectCard {
+  width: 100%;
+  height: 40vh
+}
+
+.imgWrap {
+  position: relative;
+  width: 100%;
+}
+
+.imgBackground {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  visibility: hidden;
+  opacity: 0;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  transition: opacity .8s, visibility .8s;
+}
+
+.imgWrap:hover .imgBackground {
+  visibility: visible;
+  opacity: 1;
+}
+
+.imgWrap:hover .imgText {
+  transform: translateY(8em);
+}
+
+.imgText {
+  transition: .8s;
+  transform: translateY(1em);
+  color: #eeeeee
+}
+
+.projectsButton {
+  background-color: #393e46;
+  color: #00adb5;
+  border-color: #eeeeee;
+}
+
+.projectsButton:hover {
+  scale: 1.05;
+}
